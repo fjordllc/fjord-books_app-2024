@@ -55,6 +55,7 @@ group :development do
   gem 'rubocop-fjord', require: false
   gem 'rubocop-rails', require: false
 
+  gem 'faker'
   gem 'i18n_generators'
 end
 
@@ -65,3 +66,4 @@ group :test do
 end
 
 gem 'carrierwave'
+gem 'kaminari'
