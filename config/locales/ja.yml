@@ -192,8 +192,10 @@ ja:
       title_index: "%{name}の一覧"
       title_new: "%{name}の新規作成"
       title_edit: "%{name}の編集"
+      title_show: "%{name}の詳細"
       error: エラー
       validation_error: "%{errors}があるため、この%{name}は保存できませんでした"
+      sign_out: ログアウト
     pagination:
       first: '« 最初'
       last: '最後 »'
@@ -205,3 +207,11 @@ ja:
       notice_create: "%{name}が作成されました。"
       notice_update: "%{name}が更新されました。"
       notice_destroy: "%{name}が削除されました。"
+  layouts:
+    application:
+      menu: メニュー
+  # devise-i18n-viewsをオーバーライド
+  devise:
+    registrations:
+      edit:
+        title: "アカウント編集"
