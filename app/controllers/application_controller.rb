@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
     new_user_session_path
   end
 
-  def signed_in_root_path(_resource_or_scope)
-    edit_user_registration_path
+  def signed_in_root_path(resource_or_scope)
+    user_path(resource_or_scope)
   end
 end
